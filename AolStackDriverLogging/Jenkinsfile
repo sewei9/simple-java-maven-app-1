@@ -41,13 +41,13 @@ pipeline {
             }
         }
     }
-    stage('Test') {
+    /*stage('Test') {
         steps {
             dir(path: "${env.CODE_BASE_DIR}") {
                 sh 'mvn test'
                   /*container('maven'){
                     sh 'mvn test'
-                }*/
+                }
             }
         }        
     }
