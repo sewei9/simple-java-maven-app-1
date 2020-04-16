@@ -2,10 +2,10 @@ def STATUS = ['SUCCESS': 'good', 'FAILURE': 'danger', 'UNSTABLE': 'danger', 'ABO
 
 pipeline {
     agent any
-    environment {
+    /*environment {
         REPOSITORY_NAME = "common-framework"
         CODE_BASE_DIR = "${WORKSPACE}/${REPOSITORY_NAME.toLowerCase()}"
-        /*ARTIFACTORY_URL = "artifactory.build.ingka.ikea.com"
+        ARTIFACTORY_URL = "artifactory.build.ingka.ikea.com"
         ARTIFACT_NAME = "${REPOSITORY_NAME.toLowerCase()}_${BRANCH_NAME}_${BUILD_ID}"
         GCLOUD_SDK_PATH = "${CODE_BASE_DIR}/GoogleCloudSDK/google-cloud-sdk/bin"
         PATH = "$GCLOUD_SDK_PATH:$PATH"
