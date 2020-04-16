@@ -47,10 +47,10 @@ pipeline {
                 sh 'mvn test'
                   /*container('maven'){
                     sh 'mvn test'
-                }*/
+                }
             }
         }        
-    }*/
+    }
     /*stage('Static Code Analysis') {
       steps {
         dir(path: "${env.CODE_BASE_DIR}") {
